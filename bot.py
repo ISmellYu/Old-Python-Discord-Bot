@@ -197,19 +197,19 @@ class Helpers:
 
 
     def check_db_integrity(self):
-        print('Sprawdzanie tabeli "discount"....')
+        print('Checking table "discount"....')
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS discount (
                                             user TEXT)""")
-        print('Sprawdzanie tabeli "users"....')
+        print('Checking table "users"....')
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS users(
                                             discord TEXT,
                                             amount INTEGER,
                                             daily BOOLEAN NOT NULL DEFAULT true)""")
-        print('Sprawdzanie tabeli "global_counter"....')
+        print('Checking table "global_counter"....')
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS global_counter(
                                             counter_name TEXT,
                                             amount INTEGER)""")
-        print('Sprawdzanie tabeli "ruletka"....')
+        print('Checking table "roulette"....')
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS ruletka (
                                             color TEXT,
                                             counter INTEGER,
