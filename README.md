@@ -7,4 +7,5 @@ Features:
 - Roulette
 - Giving points to another user
 - Daily
+- Muting users by spending points
 - Adminstator tools(add points, remove points, update database)
